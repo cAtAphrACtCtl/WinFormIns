@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NF48", "NF48\NF48.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NF48Form", "NF48Form\NF48Form\NF48Form.csproj", "{479D1688-AFD3-41BA-859E-E8B458A88DEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNet6Form", "dotNet6Form\dotNet6Form.csproj", "{1EECAF62-74D6-409D-AA0F-C3800EE345F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{479D1688-AFD3-41BA-859E-E8B458A88DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{479D1688-AFD3-41BA-859E-E8B458A88DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{479D1688-AFD3-41BA-859E-E8B458A88DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EECAF62-74D6-409D-AA0F-C3800EE345F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EECAF62-74D6-409D-AA0F-C3800EE345F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EECAF62-74D6-409D-AA0F-C3800EE345F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EECAF62-74D6-409D-AA0F-C3800EE345F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,4 @@
-﻿using NF48Form.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NF48Form
 {
-	public partial class MainForm : ZForm
+	public partial class MainForm : Form
 	{
-		List<ChildForm> childForms = new List<ChildForm>();
+		//List<Form> childForms = new List<Form>();
 
 		public MainForm()
 		{
@@ -25,21 +24,30 @@ namespace NF48Form
 			base.OnClosing(e);
 		}
 
-		
+		protected override void WndProc(ref Message m)
+		{
+			if (m.Msg == 16)
+			{
+
+			}
+			base.WndProc(ref m);
+		}
+
+
 		static int globalChildIndex = 0;
 		private void GetNewForm_Click(object sender, EventArgs e)
 		{
 			
 			var childForm = new ChildForm();
 			childForm.TopMost = true;
-			childForm.Show(this);
-			childForms.Add(childForm);
-			childForm.Text = $"child Form {globalChildIndex++}";
+			childForm.Owner = this;
+			childForm.Show();
+			childForm.Text = $"{childForm.GetType().Name} {globalChildIndex++}";
+			
 		}
 
-		public void DeleteChildForm(ChildForm childForm)
+		private void GetSickFormButton_Click(object sender, EventArgs e)
 		{
-			childForms.Remove(childForm);
 		}
 	}
 }

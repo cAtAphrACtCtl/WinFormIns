@@ -1,6 +1,6 @@
-﻿namespace NF48Form.Forms
+﻿namespace dotNet6Form
 {
-	partial class KForm
+	partial class ChildForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -30,10 +30,28 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "KForm";
+			this.ClientSize = new System.Drawing.Size(800, 800);
+			this.Text = "ChildForm";
+			this.SuspendLayout();
+
+			// 
+			// comboBox
+			// 
+			this.comboBox = new ComboBox();
+			this.comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+			this.comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+			this.comboBox.FormattingEnabled = true;
+			this.comboBox.Location = new System.Drawing.Point(0, 0);
+			this.comboBox.Name = "comboBox";
+			this.comboBox.Size = new System.Drawing.Size(164, 32);
+			this.comboBox.TabIndex = 1;
+			this.Controls.Add(this.comboBox);
+
+			this.ResumeLayout();
 		}
 
 		#endregion
+
+		private ComboBox comboBox;
 	}
 }
